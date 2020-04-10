@@ -210,10 +210,10 @@ include_directories(
 # catkin_add_nosetests(test)
 
 
-add_executable(main
+add_executable(safety_speed
   src/main.cpp
 )
-add_dependencies(main ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(main
+add_dependencies(safety_speed ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(safety_speed
   ${catkin_LIBRARIES}
 )
